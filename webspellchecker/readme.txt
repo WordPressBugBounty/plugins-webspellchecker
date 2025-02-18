@@ -1,13 +1,15 @@
 ﻿=== WProofreader spell & grammar check plugin for WordPress ===
 Contributors: webspellchecker
-Tags: WordPress spell check plugin, spell check plugin, grammar check plugin, spell check in Gutenberg, proofreader, text checker, sentence corrector
+Tags: spell check, grammar check, proofreading, writing assistant, typo correction
 Donate link: https://www.webspellchecker.com/
-Requires at least: 5.2
-Tested up to: 6.6.2
-Stable tag: 2.6.10
+Requires at least: 6.6
+Tested up to: 6.7
+Requires PHP: 7.4
+Stable tag: 2.7.0
 License: GPL-2.0+
-Requires PHP: 7.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+
+WProofreader checks spelling, grammar, and style in real-time while editing in WordPress.
 
 == Description ==
 
@@ -177,6 +179,9 @@ Sure, please let us know how we can make the plugin more useful for you. Create 
 10. WProofreader WordPress plugin settings page.
 
 == Changelog ==
+= 2.7.0 – 2025-02-18 =
+* Fixed issue with RTL (right-to-left) languages visibility in the Language dropdown on the plugin Settings page.
+
 = 2.6.10 – 2024-09-23 =
 * Minor update resolving the URL input problem in the Classic Editor.
 
