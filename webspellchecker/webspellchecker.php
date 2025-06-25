@@ -3,7 +3,7 @@
  * Plugin Name: WProofreader
  * Plugin URI: https://webspellchecker.com/
  * Description: WProofreader checks spelling, grammar, and style in real-time while editing in WordPress.
- * Version:     2.7.1
+ * Version:     2.8.0
  * Author:      WebSpellChecker
  * Author URI:  https://webspellchecker.com/
  * Text Domain: webspellchecker
@@ -17,7 +17,7 @@ final class WProofreader {
 	const TRIAL_CUSTOMER_ID = '1:cma3h3-HTiyU3-JL08g4-SRyuS1-a9c0F3-kH6Cu-OlMHS-thcSV2-HlGmv3-YzRCN2-qrKY42-uPc';
 	const SLANG = 'en_US';
 	const BADGE_BUTTON = 'on';
-	const PLUGIN_VERSION = "2.7.1";
+	const PLUGIN_VERSION = "2.8.0";
 	private static $instance = null;
 	private $js_added = false;
 	private $settings;
@@ -190,13 +190,13 @@ final class WProofreader {
 	}
 
 	function register_proofreader_scripts() {
-		wp_register_script( 'wscbundle', 'https://svc.webspellchecker.net/spellcheck31/wscbundle/wscbundle.js', array(), '23090950', false );
-		wp_register_script( 'ProofreaderConfig', plugin_dir_url( __FILE__ ) . '/assets/proofreaderConfig.js', array( 'wscbundle' ), '23090950', true );
-		wp_register_script( 'ProofreaderInstance', plugin_dir_url( __FILE__ ) . '/assets/instance.js', array( 'wscbundle' ), '23090950', true );
+		wp_register_script( 'wscbundle', 'https://svc.webspellchecker.net/spellcheck31/wscbundle/wscbundle.js', array(), '20250625', false );
+		wp_register_script( 'ProofreaderConfig', plugin_dir_url( __FILE__ ) . '/assets/proofreaderConfig.js', array( 'wscbundle' ), '20250625', true );
+		wp_register_script( 'ProofreaderInstance', plugin_dir_url( __FILE__ ) . '/assets/instance.js', array( 'wscbundle' ), '20250625', true );
 		wp_register_script( 'GutenbergEnvironment', plugin_dir_url( __FILE__ ) . '/assets/gutenberg-environment.js', array(
 			'ProofreaderConfig',
 			'wp-blocks'
-		), '171220181251', true );
+		), '171220181252', true );
 	}
 
 	function init_proofreader_js() {
